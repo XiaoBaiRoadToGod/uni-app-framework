@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import App from './App'
 import store from './store'
+// eslint-disable-next-line
 import router from './router'
 import { RouterMount } from 'uni-simple-router'
+
+// 引入mock
+require('./mock')
 
 Vue.config.productionTip = false
 

@@ -1,1 +1,1 @@
-export default 'hhhhhhh'
+export default ''

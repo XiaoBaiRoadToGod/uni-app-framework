@@ -1,23 +1,35 @@
 <template>
 	<view class="content">
-		<view>
-			<text class="title">{{title}}</text>
+		<view v-for="item in dataLists" :key="item.id">
+			<text class="title">{{item.name + '|' + item.job}}</text>
 		</view>
 	</view>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
 	export default {
 		data() {
 			return {
 				title: '首页'
 			}
 		},
+		computed: {
+			...mapGetters({
+				dataLists: 'home/dataLists'
+			})
+		},
 		onLoad() {
-
+			console.log(this)
+			this.getDataLists().then(res => {
+				console.log(res)
+				console.log(this.dataLists)
+			})
 		},
 		methods: {
-
+			...mapActions({
+				getDataLists: 'home/getDataLists'
+			})
 		}
 	}
 </script>
