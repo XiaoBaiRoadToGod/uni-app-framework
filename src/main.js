@@ -4,9 +4,13 @@ import store from './store'
 // eslint-disable-next-line
 import router from './router'
 import { RouterMount } from 'uni-simple-router'
-
+import uView from 'uview-ui'
+Vue.use(uView)
+// #ifdef H5
 // 引入mock
 require('./mock')
+// #endif
+
 
 Vue.config.productionTip = false
 

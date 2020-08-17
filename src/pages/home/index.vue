@@ -1,8 +1,9 @@
 <template>
 	<view class="content">
-		<view v-for="item in dataLists" :key="item.id">
-			<text class="title">{{item.name + '|' + item.job}}</text>
-		</view>
+		<u-cell-group>
+			<u-cell-item  v-for="item in dataLists" :key="item.id" :title="item.name" :value="item.job" :center="true" ></u-cell-item>
+		</u-cell-group>
+
 	</view>
 </template>
 
