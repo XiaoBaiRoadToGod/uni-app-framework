@@ -7,10 +7,8 @@ const files = requireContext(path.join(__dirname, './'), true, /\.js$/)
 // const files = require.context('.', false, /\.js$/)
 const routes = []
 files.keys().forEach(key => {
-  console.log(key)
   if(key.startsWith('index')) return 
   const item = files(key) 
-  console.log(item)
   // 不知道为什么concat 用不了
   // routes = routes.concat(item)
   for(let i of item) {
