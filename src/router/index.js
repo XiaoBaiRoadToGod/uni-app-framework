@@ -6,7 +6,7 @@ Vue.use(Router)
 // 初始化
 // console.log(modules)
 // eslint-disable-next-line
-console.log([...ROUTES])
+// console.log([...ROUTES])
 const router = new Router({
   encodeURI:false,
   // eslint-disable-next-line
@@ -15,8 +15,8 @@ const router = new Router({
 // 全局路由前置守卫
 // let flag = false
 router.beforeEach((to, from, next) => {
-  console.log('路由守卫--前置')
-  console.log(to)
+  // console.log('路由守卫--前置')
+  // console.log(to)
   // next(to.aliasPath || to.path)
   // flag = false
   // if(!flag && to.aliasPath && to.aliasPath !== '/') {
