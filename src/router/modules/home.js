@@ -1,6 +1,6 @@
 const home = [
   {
-    // 注意path 必须跟pages.json中的地址对应，最前面别忘了加 / 
+    // 注意path 必须跟pages.json中的地址对应，最前面别忘了加 /
     path: '/pages/home/index',
     aliasPath: '/',
     name: 'home',

@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<u-cell-group>
-			<u-cell-item  v-for="item in dataLists" :key="item.id" :title="item.name" :value="item.job" :center="true" ></u-cell-item>
+			<u-cell-item  v-for="item in dataLists" :key="item.id" :title="item.name" :value="item.job" :center="true" />
 		</u-cell-group>
 
 	</view>
@@ -9,30 +9,30 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-	export default {
-		data() {
-			return {
-				title: '首页'
-			}
-		},
-		computed: {
-			...mapGetters({
-				dataLists: 'home/dataLists'
-			})
-		},
-		onLoad() {
-			console.log(this)
-			this.getDataLists().then(res => {
-				console.log(res)
-				console.log(this.dataLists)
-			})
-		},
-		methods: {
-			...mapActions({
-				getDataLists: 'home/getDataLists'
-			})
-		}
-	}
+export default {
+  data () {
+    return {
+      title: '首页'
+    }
+  },
+  computed: {
+    ...mapGetters( {
+      dataLists: 'home/dataLists'
+    } )
+  },
+  onLoad () {
+    console.log( this )
+    this.getDataLists().then( res => {
+      console.log( res )
+      console.log( this.dataLists )
+    } )
+  },
+  methods: {
+    ...mapActions( {
+      getDataLists: 'home/getDataLists'
+    } )
+  }
+}
 </script>
 
 <style>

@@ -1,18 +1,18 @@
 module.exports = [
   {
-    "root": "views",
-    "pages": [
+    'root': 'views',
+    'pages': [
       {
-        "path": "about/index",
-        "aliasPath": "/about",
-        "style": {
-          "navigationBarTitleText": "uni-app"
+        'path': 'about/index',
+        'aliasPath': '/about',
+        'style': {
+          'navigationBarTitleText': 'uni-app'
         },
-        "meta": {
-          "title": "关于"
+        'meta': {
+          'title': '关于'
         }
       }
     ]
-    
+
   }
 ]

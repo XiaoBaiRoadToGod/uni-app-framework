@@ -16,26 +16,26 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    "vue/max-attributes-per-line": [2, {
-      "singleline": 10,
-      "multiline": {
-        "max": 1,
-        "allowFirstLine": false
+    'vue/max-attributes-per-line': [2, {
+      'singleline': 10,
+      'multiline': {
+        'max': 1,
+        'allowFirstLine': false
       }
     }],
-    "vue/singleline-html-element-content-newline": "off",
-    "vue/multiline-html-element-content-newline":"off",
-    "vue/name-property-casing": ["error", "PascalCase"],
-    "vue/no-v-html": "off",
-    "vue/html-self-closing": ["error", {
-        "html": {
-          "void": "never",
-          "normal": "always",
-          "component": "always"
-        },
-        "svg": "always",
-        "math": "always"
-      }],
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'vue/name-property-casing': ['error', 'PascalCase'],
+    'vue/no-v-html': 'off',
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'never',
+        'normal': 'always',
+        'component': 'always'
+      },
+      'svg': 'always',
+      'math': 'always'
+    }],
     'accessor-pairs': 2,
     'arrow-spacing': [2, {
       'before': true,
@@ -58,7 +58,7 @@ module.exports = {
     'curly': [2, 'multi-line'],
     'dot-location': [2, 'property'],
     'eol-last': 2,
-    'eqeqeq': ["error", "always", {"null": "ignore"}],
+    'eqeqeq': ['error', 'always', { 'null': 'ignore' }],
     'generator-star-spacing': [2, {
       'before': true,
       'after': true
@@ -82,9 +82,8 @@ module.exports = {
     }],
     'new-parens': 2,
     'no-array-constructor': 2,
-    "no-async-promise-executor": 2,
+    'no-async-promise-executor': 0,
     'no-caller': 2,
-    'no-console': 'off',
     'no-class-assign': 2,
     'no-cond-assign': 2,
     'no-const-assign': 2,
@@ -201,7 +200,6 @@ module.exports = {
     'yield-star-spacing': [2, 'both'],
     'yoda': [2, 'never'],
     'prefer-const': 2,
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'object-curly-spacing': [2, 'always', {
       objectsInObjects: false
     }],
