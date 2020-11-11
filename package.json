@@ -61,7 +61,7 @@
     "regenerator-runtime": "^0.13.7",
     "uni-pages-hot-modules": "^0.0.10",
     "uni-read-pages": "^1.0.5",
-    "uni-simple-router": "^1.5.5",
+    "uni-simple-router": "2.0.0-alpha.1",
     "uview-ui": "1.7.8",
     "vue": "^2.6.12",
     "vuex": "^3.5.1"
