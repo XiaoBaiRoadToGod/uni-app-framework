@@ -10,27 +10,27 @@
 <script>
 import { mapActions, mapGetters } from 'vuex'
 export default {
-  data () {
+  data() {
     return {
       title: '首页'
     }
   },
   computed: {
-    ...mapGetters( {
+    ...mapGetters({
       dataLists: 'home/dataLists'
-    } )
+    })
   },
-  onLoad () {
-    console.log( this )
-    this.getDataLists().then( res => {
-      console.log( res )
-      console.log( this.dataLists )
-    } )
+  onLoad() {
+    console.log(this)
+    this.getDataLists().then(res => {
+      console.log(res)
+      console.log(this.dataLists)
+    })
   },
   methods: {
-    ...mapActions( {
+    ...mapActions({
       getDataLists: 'home/getDataLists'
-    } )
+    })
   }
 }
 </script>

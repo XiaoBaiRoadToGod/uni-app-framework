@@ -2,19 +2,19 @@
 import Vue from 'vue'
 import Router from 'uni-simple-router'
 
-Vue.use( Router )
+Vue.use(Router)
 // 初始化
 // console.log(modules)
 // eslint-disable-next-line
 // console.log([...ROUTES])
-const router = new Router( {
+const router = new Router({
   encodeURI: false,
   // eslint-disable-next-line
   routes: [...ROUTES] // 路由表
-} )
+})
 // 全局路由前置守卫
 // let flag = false
-router.beforeEach( ( to, from, next ) => {
+router.beforeEach((to, from, next) => {
   // console.log('路由守卫--前置')
   // console.log(to)
   // next(to.aliasPath || to.path)
@@ -28,11 +28,11 @@ router.beforeEach( ( to, from, next ) => {
   // } else {
   next()
   // }
-} )
+})
 // 全局路由后置守卫
 // eslint-disable-next-line
 router.afterEach((to, from) => {
 
-} )
+})
 
 export default router

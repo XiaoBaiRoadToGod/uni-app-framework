@@ -26,7 +26,7 @@ const demoData2 = {
 
 export default {
   'get|/data/lists1': option => {
-    console.log( option )
+    console.log(option)
     // 可以在这个地方对demoList2进行一系列操作，例如增删改
     // option 指向本次请求的 Ajax 选项集，含有 url、type 和 body 三个属性
     return {

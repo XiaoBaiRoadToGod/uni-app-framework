@@ -27,15 +27,6 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 'off',
     'vue/name-property-casing': ['error', 'PascalCase'],
     'vue/no-v-html': 'off',
-    'vue/html-self-closing': ['error', {
-      'html': {
-        'void': 'never',
-        'normal': 'always',
-        'component': 'always'
-      },
-      'svg': 'always',
-      'math': 'always'
-    }],
     'accessor-pairs': 2,
     'arrow-spacing': [2, {
       'before': true,
@@ -84,6 +75,7 @@ module.exports = {
     'no-array-constructor': 2,
     'no-async-promise-executor': 0,
     'no-caller': 2,
+    // 'no-console': 'off',
     'no-class-assign': 2,
     'no-cond-assign': 2,
     'no-const-assign': 2,
@@ -183,8 +175,8 @@ module.exports = {
       'after': true
     }],
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, 'always'],
-    'space-in-parens': [2, 'always'],
+    'space-before-function-paren': [2, 'never'],
+    'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'space-unary-ops': [2, {
       'words': true,
@@ -200,6 +192,7 @@ module.exports = {
     'yield-star-spacing': [2, 'both'],
     'yoda': [2, 'never'],
     'prefer-const': 2,
+    // 'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'object-curly-spacing': [2, 'always', {
       objectsInObjects: false
     }],

@@ -8,31 +8,31 @@ export default {
     dataLists: []
   },
   mutations: {
-    updateDataLists ( state, data ) {
+    updateDataLists(state, data) {
       state.dataLists = data
     }
 
   },
   actions: {
-    getDataLists ( { commit, getters }, par ) {
+    getDataLists({ commit, getters }, par) {
       // console.log(store)
-      return new Promise( async ( resolve, reject ) => {
+      return new Promise(async(resolve, reject) => {
         try {
-          const data = await getDataLists( par )
-          const lists = getters.dataLists.concat( data.data.rows )
-          if ( data.data.code ) {
-            commit( 'updateDataLists', lists )
+          const data = await getDataLists(par)
+          const lists = getters.dataLists.concat(data.data.rows)
+          if (data.data.code) {
+            commit('updateDataLists', lists)
           }
 
-          resolve( data )
-        } catch ( e ) {
-          reject( e )
+          resolve(data)
+        } catch (e) {
+          reject(e)
         }
-      } )
+      })
     }
   },
   getters: {
-    dataLists ( state ) {
+    dataLists(state) {
       return state.dataLists
     }
   }
