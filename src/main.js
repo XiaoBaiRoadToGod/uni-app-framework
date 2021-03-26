@@ -1,3 +1,9 @@
+/*
+ * @Author: Davidbieber
+ * @Email: davidbieber@163.com
+ * @Date: 2021-03-26 10:33:57
+ * @Description: 
+ */
 import Vue from 'vue'
 import App from './App'
 import store from './store'
@@ -5,10 +11,15 @@ import store from './store'
 import router from './router'
 import { RouterMount } from 'uni-simple-router'
 import uView from 'uview-ui'
+// 自定义navbar
+import Navbar from '@/components/navbar/index'
+import '@/assets/scss/common.scss'
+
 Vue.use(uView)
+Vue.component('nav-bar', Navbar)
 // #ifdef H5
 // 引入mock
-require('./mock')
+// require('./mock')
 // #endif
 
 Vue.config.productionTip = false

@@ -1,3 +1,9 @@
+/*
+ * @Author: Davidbieber
+ * @Email: davidbieber@163.com
+ * @Date: 2021-03-26 10:33:57
+ * @Description: 
+ */
 import {
   getDataLists
 } from '@/apis/home'
@@ -5,12 +11,16 @@ export default {
   namespaced: true,
   state: {
     text: 'home',
-    dataLists: []
+    dataLists: [],
+    navbarHeight: 0
   },
   mutations: {
     updateDataLists(state, data) {
       state.dataLists = data
-    }
+    },
+    updateNavbarHeight ( state, data ) {
+      state.navbarHeight = data
+    },
 
   },
   actions: {
@@ -34,6 +44,9 @@ export default {
   getters: {
     dataLists(state) {
       return state.dataLists
-    }
+    },
+    navbarHeight ( state ) {
+      return state.navbarHeight
+    },
   }
 }

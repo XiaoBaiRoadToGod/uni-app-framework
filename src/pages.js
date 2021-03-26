@@ -1,3 +1,9 @@
+/*
+ * @Author: Davidbieber
+ * @Email: davidbieber@163.com
+ * @Date: 2021-03-26 10:33:57
+ * @Description: 
+ */
 module.exports = (pagesJson, loader) => {
   // 需要将loader 传入作为初始化，
   const hotRequire = require('uni-pages-hot-modules')(loader)
@@ -11,6 +17,9 @@ module.exports = (pagesJson, loader) => {
     'subPackages': [
       ...hotRequire('./pages-router/sub-package.js')
     ],
+    'globalStyle': {
+      'navigationStyle': 'custom'
+    },
 
     'tabBar': {
       'color': '#A3A1A1',
@@ -20,11 +29,11 @@ module.exports = (pagesJson, loader) => {
       'list': [
         {
           'pagePath': 'pages/home/index',
-          'text': '商城'
+          'text': '主页'
         },
         {
           'pagePath': 'pages/person/index',
-          'text': '个人中心'
+          'text': '我的'
         }
       ]
     }

@@ -1,18 +1,26 @@
+<!--
+ * @Author: Davidbieber
+ * @Email: davidbieber@163.com
+ * @Date: 2021-03-26 10:33:57
+ * @Description: 
+-->
 <template>
-	<view class="content">
-		<u-cell-group>
-			<u-cell-item  v-for="item in dataLists" :key="item.id" :title="item.name" :value="item.job" :center="true" />
-		</u-cell-group>
-
-	</view>
+  <view class="container column">
+    <view>
+      <nav-bar />
+    </view>
+    <view class="flex-item">
+      hhh
+    </view>
+  </view>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
 export default {
-  data() {
+  data () {
     return {
-      title: '首页'
+      title: '主页'
     }
   },
   computed: {
@@ -20,7 +28,7 @@ export default {
       dataLists: 'home/dataLists'
     })
   },
-  onLoad() {
+  onLoad () {
     console.log(this)
     this.getDataLists().then(res => {
       console.log(res)
@@ -36,26 +44,26 @@ export default {
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 200rpx auto 50rpx auto;
+}
 
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
+.text-area {
+  display: flex;
+  justify-content: center;
+}
 
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
 </style>
