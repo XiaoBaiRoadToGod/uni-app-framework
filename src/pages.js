@@ -20,6 +20,12 @@ module.exports = (pagesJson, loader) => {
     'globalStyle': {
       'navigationStyle': 'custom'
     },
+    'preloadRule': {
+      'pages/home/index': { // 想要实现预加载的页面名称
+        'network': 'all', // 指定网络 all 不限网络   wifi：仅wifi
+        'packages': ['views'] // 分包的 root 或 name
+      }
+    },
 
     'tabBar': {
       'color': '#A3A1A1',
