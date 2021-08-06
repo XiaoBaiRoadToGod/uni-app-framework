@@ -66,6 +66,9 @@ export default {
       /* eslint-disable */
       const pages = getCurrentPages()// 获取页面栈
       if (pages.length < 2) {
+        uni.reLaunch({
+            url: '/pages/home/index'
+        });
         return false
       }
       const prevPage = pages[pages.length - 2] // 上一个页面
