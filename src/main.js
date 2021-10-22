@@ -2,7 +2,7 @@
  * @Author: Davidbieber
  * @Email: davidbieber@163.com
  * @Date: 2021-03-26 10:33:57
- * @Description: 
+ * @Description: 123
  */
 import Vue from 'vue'
 import App from './App'
@@ -13,7 +13,6 @@ import { RouterMount } from 'uni-simple-router'
 import uView from 'uview-ui'
 // 自定义navbar
 import Navbar from '@/components/navbar/index'
-import '@/assets/scss/common.scss'
 
 Vue.use(uView)
 Vue.component('nav-bar', Navbar)

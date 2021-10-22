@@ -53,6 +53,7 @@ process.UNI_LIBRARIES.forEach(libraryName => {
 })
 module.exports = {
   presets: [
+    '@babel/env',
     [
       '@vue/app',
       {
